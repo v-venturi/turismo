@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:tan;
+    overflow: hidden;    
+}
+li{
+    float: left;
+}
+li a{
+    display:block;
+    padding: 15px 17px;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    background-color:orange;
+    color: snow;   
+    font-size: 102%;
+    
+}
+.menu-ativo{
+    background-color: orange;
+    color: snow;
+}
+#banner{
+    width: 100%;
+    height: 500px;
+    background: url(../img/banner2.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
