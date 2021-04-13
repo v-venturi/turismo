@@ -5,12 +5,19 @@
 body{
     margin: 0;
 }
+/* para o menu fixar fixo no topo */
+nav{
+    position: fixed;
+    width: 100%;
+}
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color:tan;
-    overflow: hidden;    
+    overflow: hidden;
+          
 }
 li{
     float: left;
@@ -34,9 +41,51 @@ li a:hover{
 #banner{
     width: 100%;
     height: 500px;
+    float: left;
     background: url(../img/banner2.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+}
+#conteudo{
+    width: 100%;
+    height: 800px;/*apos inserir conteudo, ajustar o tamanho*/
+    /* background-color: darkslategrey; */
+    float: left;
+}
+#centraliza-conteudo{
+    margin: 0 auto;
+    width: 80%;
+    height: 800px;
+    /* background-color: dimgray; */
+}
+#cidade{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    /* background-color: red; */
+}
+#imagem-cidade{
+    width: 40%;
+    height: 510px;
+    float: left;
+    /* background-color: sandybrown; */
+    /* padding: 100px 0px; */
+}
+#texto-cidade{
+    width: 60%;
+    height: auto;
+    float: left;
+    /* background-color: yellow; */
+}
+#texto-cidade>p{
+    text-align: justify;
+}
+#pontos-turisticos{
+    width: 100%;
+    height: 500px;
+    float: left;
+    background-color: blueviolet;
 }
