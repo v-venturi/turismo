@@ -129,10 +129,15 @@ text-align: center;
     float: left;
     /* background-color: rgb(158, 158, 207); */
 }
-#galeria>img{
-    width: 25%;
-    height: auto;
-}
 #galeria>h3{
     text-align: center;
+}
+.galeria-img{
+    width: 19.5%;
+    margin: 0 0.25%;
+    float: left;
+}
+.galeria-img>img{
+    width: 100%;
+    height: 120px;
 }
