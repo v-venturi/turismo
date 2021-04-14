@@ -85,7 +85,54 @@ background-size: cover;
 }
 #pontos-turisticos{
     width: 100%;
-    height: 500px;
+    height: 700px;
     float: left;
-    background-color: blueviolet;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* background-color: blueviolet; */
+}
+.card{
+    width: 31%;
+    height: auto;
+    float: left;
+    background-color:rgba(207, 120, 12, 0.2);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+    margin: 0 1%;
+}
+.card-imagem{
+    width: 100%;
+    height: 200px;
+    float: left;
+    /* background-color: royalblue; */
+}
+.card-texto{
+    width: 100%;
+    height: 300px;
+    float: left;
+    /* background-color: rgb(225, 142, 65); */
+    padding: 0 10px;
+}
+.card-imagem>img{
+    width: 100%;
+    height: 200px;
+    padding: 2px;
+}
+.card-texto>p{
+    text-align:justify;
+}
+#pontos-turisticos>h3{
+text-align: center;
+}
+#galeria{
+    width: 100%;
+    height: 600px;
+    float: left;
+    /* background-color: rgb(158, 158, 207); */
+}
+#galeria>img{
+    width: 25%;
+    height: auto;
+}
+#galeria>h3{
+    text-align: center;
 }
