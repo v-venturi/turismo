@@ -8,18 +8,19 @@
     <!-- link para css externo -->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /><!--link fancy css galeria imagens-->
 </head>
 <body>
     <div id="container">
         <header>
             <nav>
                 <ul>
-                    <li><a class="menu-ativo" href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#"><i class="fas fa-city"></i> A Cidade</a></li>
-                    <li><a href="#"><i class="fas fa-umbrella-beach"></i> Pontos Turísticos</a></li>
-                    <li><a href="#"><i class="fas fa-camera-retro"></i> Galeria</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
-                </ul>
+                    <li><a class="menu-ativo" href="#container"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#cidade"><i class="fas fa-city"></i> A Cidade</a></li>
+                    <li><a href="#pontos-turisticos"><i class="fas fa-umbrella-beach"></i> Pontos Turísticos</a></li>
+                    <li><a href="#galeria"><i class="fas fa-camera-retro"></i> Galeria</a></li>
+                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul> 
             </nav>
         </header>
         <div id="banner">
@@ -27,12 +28,12 @@
         </div>
         <div id ="conteudo">
             <div id="centraliza-conteudo">
-                <div id="cidade" > 
+                <div id="cidade" >
+                    <h2>A cidade</h2> 
                     <div id="imagem-cidade">
                         <img src="img/brasao.png" alt="Farol de Ubatuba" width="100%"> 
                     </div>
-                    <div id="texto-cidade">
-                        <h3>A cidade</h3>
+                    <div id="texto-cidade">                      
                         <p>&nbsp;Atualmente, a cidade possui 748 mil metros quadrados de área total, 102 praias, mais de 20 ilhas e grande parte de seu território é de Mata Atlântica intocada. Suas praias oferecem condições para as práticas de surf, mergulho, pesca, vela e para todos os tipos de esportes aquáticos.</p>
                         <p>Considerada um paraíso ecológico do Litoral Norte paulista, o município conta com ampla rede hoteleira e gastronômica e agrega infinitas riquezas naturais. Sua gente simples, de rica cultura, acolhe os visitantes em busca de lazer e diversão.</p>
                         <p>De acordo com o website Turismo em São Paulo, vinculado a Empresa Paulista de Turismo e Eventos, entre os 645 municípios do estado, Ubatuba encontra-se entre os quatro mais procurados pelos turistas do Brasil.</p>
@@ -48,7 +49,7 @@
 
                 </div>
                 <div id="pontos-turisticos">
-                    <h3>Pontos Turísticos</h3>
+                    <h2>Pontos Turísticos</h2>
                     <div class="card">
                         <div class="card-imagem">
                             <img src="img/ilha1.png" alt="Ilha Anchieta" title="Ilha Anchieta">
@@ -76,28 +77,138 @@
                             <h4>Praia da Fortaleza</h4>
                             <p>&nbsp;A Praia da Fortaleza é um pacote completo para os visitantes. Na praia, com longa faixa de areia, há tanto ambiente com restaurantes quanto cantinhos tranquilos e com vegetação para oferecer sombra aos turistas. O mar é calmo, limpo e, como bônus, ainda apresenta formação de piscina natural. Uma delícia para passar o dia com toda a família!</p>
                         </div>                    
-                    </div>
-                    
+                    </div>                    
                 </div>
                 <div id="galeria">
-                    <h3>Galeria</h2>
+                    <h2>Galeria</h2>
                         <div class="galeria-img">
-                            <img src="img/galeria/ilha-anchieta.jpg" alt="">
+                            <a data-fancybox="gallery" data-caption="Ilha Anchieta"href="img/galeria/ilha-anchieta.jpg">
+                            <img src="img/galeria/ilha-anchieta.jpg" alt=""></a>                            
                         </div>
                         <div class="galeria-img">
-                            <img src="img/galeria/ilha-anchieta2.jpg" alt="">                            
+                            <a data-fancybox="gallery"href="img/galeria/ilha-anchieta2.jpg">
+                            <img src="img/galeria/ilha-anchieta2.jpg" alt=""></a>                            
                         </div>
-                    
-
-
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/ilha-das-couves.jpg">
+                            <img src="img/galeria/ilha-das-couves.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/ilha-das-couves1.jpg">
+                            <img src="img/galeria/ilha-das-couves1.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/ilha-das-couves2.jpg">
+                            <img src="img/galeria/ilha-das-couves2.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/ilha-do-prumirim.jpg">
+                            <img src="img/galeria/ilha-do-prumirim.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/ilha-do-prumirim1.jpg">
+                            <img src="img/galeria/ilha-do-prumirim1.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/centro.jpg">
+                            <img src="img/galeria/centro.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/ilha-do-prumirim1.jpg">
+                            <img src="img/galeria/ilha-do-prumirim1.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/ilha-do-prumirim2.jpg">
+                            <img src="img/galeria/ilha-do-prumirim2.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-brava-da-fortaleza.jpg">
+                            <img src="img/galeria/praia-brava-da-fortaleza.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-brava-da-fortaleza1.jpg">
+                            <img src="img/galeria/praia-brava-da-fortaleza1.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-brava-da-fortaleza2.jpg">
+                            <img src="img/galeria/praia-brava-da-fortaleza2.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-brava-da-fortaleza3.jpg">
+                            <img src="img/galeria/praia-brava-da-fortaleza3.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-da-fortaleza.jpg">
+                            <img src="img/galeria/praia-da-fortaleza.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-da-fortaleza1.jpg">
+                            <img src="img/galeria/praia-da-fortaleza1.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-de-itamambuca.jpg">
+                            <img src="img/galeria/praia-de-itamambuca.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-de-toninhas.jpg">
+                            <img src="img/galeria/praia-de-toninhas.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-do-cedro-do-sul-e-praia-deserto.jpg">
+                            <img src="img/galeria/praia-do-cedro-do-sul-e-praia-deserto.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-do-cedro-do-sul-e-praia-deserto2.jpg">
+                            <img src="img/galeria/praia-do-cedro-do-sul-e-praia-deserto2.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-do-cedro-do-sul-e-praia-deserto3.jpg">
+                            <img src="img/galeria/praia-do-cedro-do-sul-e-praia-deserto3.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-do-cedro-do-sul-e-praia-deserto4.jpg">
+                            <img src="img/galeria/praia-do-cedro-do-sul-e-praia-deserto4.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-do-cedro-do-sul-e-praia-deserto5.jpg">
+                            <img src="img/galeria/praia-do-cedro-do-sul-e-praia-deserto5.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-do-portugues-prainha-do-felix.jpg">
+                            <img src="img/galeria/praia-do-portugues-prainha-do-felix.jpg" alt=""></a>                            
+                        </div>
+                        <div class="galeria-img">
+                            <a data-fancybox="gallery"href="img/galeria/praia-do-portugues-prainha-do-felix1.jpg">
+                            <img src="img/galeria/praia-do-portugues-prainha-do-felix1.jpg" alt=""></a>                            
+                        </div> 
                 </div>
 
             </div>
 
         </div>
+        <footer>           
+            <div id=mapa>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468551.546612433!2d-45.316032143820635!3d-23.44029407007947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd52b4963b4e1d%3A0x96a1961c15dce516!2sUbatuba%20-%20SP%2C%2011680-000!5e0!3m2!1spt-BR!2sbr!4v1618528226407!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+            </div>
+
+        </footer>
         
     </div>
    
-    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- script que faz a rolagem do menu "Somoth scroll" e ajustar o menu -->
+    <script>
+        $(document).ready(function(){  
+             $("nav>ul>li>a").on('click', function(event) {                
+                 event.preventDefault();
+                 $('html, body').animate({
+                     scrollTop: $( $.attr(this, 'href') ).offset().top-$('ul').height()
+                 }, 1000);                
+             });
+         });        
+    </script>
 </body>
 </html>
