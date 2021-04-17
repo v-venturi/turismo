@@ -238,4 +238,6 @@ footer{
     color:rgb(6, 40, 53);
     /* text-decoration-color:orange; */
 }
-#contato
+#contato{
+    margin-top: 50px;
+}
