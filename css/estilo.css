@@ -218,6 +218,7 @@ footer{
 #email a:hover{
     font-weight:lighter;      
     font-size: 105%;   
+    color:rgb(6, 40, 53);
     /* text-decoration-color:orange;  */
 }
 #redes-sociais>a{
@@ -234,6 +235,7 @@ footer{
     /* font-weight:bold; */
     font-weight:lighter;      
     font-size: 105%;
+    color:rgb(6, 40, 53);
     /* text-decoration-color:orange; */
 }
 #contato
