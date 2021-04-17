@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
 }
 body{
     margin: 0;
+    background-color: rgba(233, 198, 43, 0.233);  
 }
 /* para o menu fixar fixo no topo */
 nav{
@@ -142,6 +143,7 @@ text-align: center;
     height: auto;
     float: left;
     /* background-color: rgb(158, 158, 207); */
+    margin-top: 50px;   
 }
 #galeria>h2{
     text-align: center;
@@ -184,29 +186,54 @@ footer{
 }
 #contato{
     width: 100%;
-    height: 500px;
+    height: auto;
     float: left;
-    background-color: yellow;
-
+    margin-top: 50px;
+    /* background-color: yellow; */
+}
+#contato>h2{
+    text-align: center;  
+        
 }
 #telefone{
     width: 33.3%;
     height: 500px;
     float: left;
-    background-color: yellowgreen;
+    background-color:rgba(210, 180, 140, 0.651);
     text-align: center;
 }
 #email{
     width: 33.3%;
     height: 500px;
     float: left;
-    background-color: rgb(104, 83, 71);
-    text-align: center;
+    background-color: rgba(210, 180, 140, 0.651);
+    text-align: center;    
+}
+#email>a{
+    color: black;    
+}
+#email>p{
+    font-weight:bold;
+}
+#email a:hover{
+    font-weight:lighter;      
+    font-size: 105%;   
+    /* text-decoration-color:orange;  */
+}
+#redes-sociais>a{
+    color: black;
 }
 #redes-sociais{
     width: 33.3%;
     height: 500px;
     float: left;
-    background-color: rgb(81, 54, 145);
+    background-color: rgba(210, 180, 140, 0.651);
     text-align: center;
 }
+#redes-sociais a:hover{
+    /* font-weight:bold; */
+    font-weight:lighter;      
+    font-size: 105%;
+    /* text-decoration-color:orange; */
+}
+#contato
