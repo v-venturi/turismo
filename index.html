@@ -61,7 +61,7 @@
                             <p>&nbsp;Segunda maior ilha do Litoral Norte de São Paulo, o Parque Estadual da Ilha Anchieta é visita imperdível em Ubatuba.</p>
                             <p>A ilha já foi colônia correcional, presídio político e presídio de segurança máxima, até se tornar Parque Estadual da Ilha Anchieta em 1977. Cercada de verde e com belas trilhas e praias, a Ilha Anchieta preserva a história nas ruínas dos antigos edifícios. </p>
                         </div>                    
-                    </div>
+                        </div>
                     <div class="card">
                         <div class="card-imagem">
                             <img src="img/gruta1.jpg" alt="Praia da Sununga" title="Praia da Sununga">
@@ -232,11 +232,22 @@
 
                 </div>
             </div>
+            <div id="copy">
+                <p>&copy; 2021 -<span id="destaque">Ubatuba Hoje</span> - Todos os direitos reservados</p>
+            </div>
+            <div id="whatsapp">
+                <a href="https://wa.me/551994181118?text=Olá Gostaria de uma informação" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    </a>
+                
+            </div>
+
         </footer>        
     </div>
    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   
     <!-- script que faz a rolagem do menu "Somoth scroll" e ajustar o menu -->
     <script>
         $(document).ready(function(){  
@@ -244,7 +255,7 @@
                  event.preventDefault();
                  $('html, body').animate({
                      scrollTop: $( $.attr(this, 'href') ).offset().top-$('ul').height()
-                 }, 750);                
+                 }, 0);                
              });
          });        
     </script>

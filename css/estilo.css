@@ -103,7 +103,7 @@ text-align: center;
     height: auto;
     float: left;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30x;
     /* background-color: blueviolet; */
 }
 .card{
@@ -122,8 +122,9 @@ text-align: center;
 }
 .card-texto{
     width: 100%;
-    height: 300px;
+    height: auto;
     float: left;
+    min-height: 400px;
     /* background-color: rgb(225, 142, 65); */
     padding: 0 10px;
 }
@@ -143,7 +144,7 @@ text-align: center;
     height: auto;
     float: left;
     /* background-color: rgb(158, 158, 207); */
-    margin-top: 50px;   
+    margin-top: 30px;   
 }
 #galeria>h2{
     text-align: center;
@@ -159,7 +160,7 @@ text-align: center;
 }
 footer{
     width: 100%;
-    height: 600px;
+    height: 500px;
     float: left;
     /* background-color:tan; */
     margin-top: 50px;
@@ -238,6 +239,37 @@ footer{
     color:rgb(6, 40, 53);
     /* text-decoration-color:orange; */
 }
-#contato{
-    margin-top: 50px;
+#copy{
+    width: 100%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    /* background-color: darkblue; */
+}
+#destaque{
+    font-weight: bold;
+    /* background-color: orange; */
+}
+#whatsapp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    color:#FFF;
+    background-color:#25d366;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+   
+    
+}
+#whatsapp>a{
+   text-decoration: none;
+   color: white;
+}
+#whatsapp>a>i{
+    margin-top: 16px;
 }
