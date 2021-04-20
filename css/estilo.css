@@ -4,7 +4,7 @@
 }
 body{
     margin: 0;
-    background-color: rgba(233, 198, 43, 0.233);  
+    /* background-color: rgba(233, 198, 43, 0.233);   */
 }
 /* para o menu fixar fixo no topo */
 nav{
@@ -46,7 +46,7 @@ li a:hover{
 }
 #banner{
     width: 100%;
-    height: 500px;
+    height: 600px;
     float: left;
     background: url(../img/banner2.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
@@ -272,4 +272,9 @@ footer{
 }
 #whatsapp>a>i{
     margin-top: 16px;
+}
+/* Qrcode do whats */
+#telefone>img{
+    width: auto;
+    height: 150px;
 }
