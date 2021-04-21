@@ -49,10 +49,11 @@ li a:hover{
     height: 600px;
     float: left;
     background: url(../img/banner2.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+
 }
 #conteudo{
     width: 100%;
@@ -127,6 +128,7 @@ text-align: center;
     min-height: 400px;
     /* background-color: rgb(225, 142, 65); */
     padding: 0 10px;
+    
 }
 .card-imagem>img{
     width: 100%;
@@ -163,7 +165,7 @@ footer{
     height: 500px;
     float: left;
     /* background-color:tan; */
-    margin-top: 50px;
+    margin-top: 20px;
 }
 #mapa{
     width: 100%;
@@ -189,7 +191,7 @@ footer{
     width: 100%;
     height: auto;
     float: left;
-    margin-top: 50px;
+    margin-top: 30px;
     /* background-color: yellow; */
 }
 #contato>h2{
@@ -278,3 +280,62 @@ footer{
     width: auto;
     height: 150px;
 }
+/* final css desktop */
+/* inicio css mobile */
+@media only screen and (max-width: 600px){
+    #centraliza-conteudo{
+        width: 95%;       
+    }
+    #imagem-cidade{
+        width: 100%;
+        height: auto;
+    }
+    #texto-cidade{
+        width: 100%;
+        padding: 5px;
+    }
+    #imagem-cidade>img{
+        width: 60%;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        padding: 5px;            
+        
+    } 
+    .card-texto{
+        width: auto;
+        min-height: initial;
+        margin-bottom: 20px;
+    } 
+    .galeria-img{
+        width: 49.5%;        
+    }
+    #telefone,#email,#redes-sociais{
+        width: 100%;
+        height: auto;
+    }
+    #contato{
+        height: auto;
+    }
+    #telefone>img{
+        display: none;
+    }
+    .oculto-responsivo{   
+        display: none ;
+    }
+    #whatsapp{
+        bottom: 10px;
+        right: 10px;
+    }
+    #banner{
+        background: url(../img/galeria/praia-do-cedro-do-sul-e-praia-deserto5.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+         background-size: cover;
+
+    }
+       
+}
+  /* Final css mobile */
