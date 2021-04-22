@@ -13,8 +13,8 @@
 <body>
     <div id="container">
         <header>
-            <nav>
-                  <!--  -->
+            <nav class="menu" id="menu-superior">
+                 
                 <ul>
                     <li><a class="menu-ativo" href="#container"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#cidade"><i class="fas fa-city"></i> A Cidade</a></li>
@@ -22,6 +22,9 @@
                     <li><a href="#galeria"><i class="fas fa-camera-retro"></i> Galeria</a></li>
                     <li><a href="#mapa"><i class="fas fa-map-marker"></i> Localização</a></li>
                     <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                    <a href="">
+                        <i class="icon" class="fa fa-bars"></i>
+                    </a>
                 </ul> 
             </nav>
         </header>
@@ -243,6 +246,10 @@
                     </a>
                 
             </div>
+            <!-- <div class="box-cookies hide">
+                <p class="msg-cookies">Este site usa cookies para garantir que você obtenha a melhor experiência.</p>
+                <button class="btn-cookies">Aceitar!</button>
+             </div> -->
 
         </footer>        
     </div>
@@ -261,6 +268,22 @@
              });
          });        
     </script>
+    <!-- <script>
+        (() => {
+  if (!localStorage.pureJavaScriptCookies) {
+    document.querySelector(".box-cookies").classList.remove('hide');
+  }
+  
+  const acceptCookies = () => {
+    document.querySelector(".box-cookies").classList.add('hide');
+    localStorage.setItem("pureJavaScriptCookies", "accept");
+  };
+  
+  const btnCookies = document.querySelector(".btn-cookies");
+  
+  btnCookies.addEventListener('click', acceptCookies);
+})();
+    </script> -->
    
     
 </body>
