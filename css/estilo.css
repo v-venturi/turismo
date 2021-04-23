@@ -6,18 +6,20 @@ body{
     margin: 0;
     /* background-color: rgba(233, 198, 43, 0.233);   */
 }
-/* para o menu fixar fixo no topo */
-nav{
+/* /* para o menu fixar fixo no topo - movido para UL devido a css responsivo */
+/* nav{
     position: fixed;
     width: 100%;
-}
+} */
 
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color:tan;
-    overflow: hidden;          
+    overflow: hidden;  
+    position: fixed;
+    width: 100%;        
 }
 li{
     float: left;
@@ -375,6 +377,35 @@ footer{
          background-size: cover;
 
     }
+    /* Menu responsivo */
+    /* esconde os itens do menu mobile menos o primeiro */
+    .menu ul>li:not(:first-child){
+        display: none;
+    }
+    /* exibe o icone do menu mobile na direita */
+    .menu .icon{
+        display: block;
+        float: right;
+    }
+    /* ao clicar no icone do menu responsivo a direira é alterada a sua posição */
+    .menu.responsive {
+        position: relative;
+    }
+    /* Fixa a posição do menu na parte superior, sem esse trecho ele ficaria no final do menu ao expandir */
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    /* MUda o display dos itens do menu para que volte a aparecer todos, um por linnha*/
+    .menu.responsive ul>li {
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+
+
+
        
 }
 /* 

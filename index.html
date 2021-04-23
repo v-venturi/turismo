@@ -22,8 +22,8 @@
                     <li><a href="#galeria"><i class="fas fa-camera-retro"></i> Galeria</a></li>
                     <li><a href="#mapa"><i class="fas fa-map-marker"></i> Localização</a></li>
                     <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
-                    <a href="">
-                        <i class="icon" class="fa fa-bars"></i>
+                    <a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
+                        <i class="fa fa-bars"></i>
                     </a>
                 </ul> 
             </nav>
@@ -267,24 +267,17 @@
                  }, 0);                
              });
          });        
-    </script>
-    <!-- <script>
-        (() => {
-  if (!localStorage.pureJavaScriptCookies) {
-    document.querySelector(".box-cookies").classList.remove('hide');
-  }
-  
-  const acceptCookies = () => {
-    document.querySelector(".box-cookies").classList.add('hide');
-    localStorage.setItem("pureJavaScriptCookies", "accept");
-  };
-  
-  const btnCookies = document.querySelector(".btn-cookies");
-  
-  btnCookies.addEventListener('click', acceptCookies);
-})();
-    </script> -->
-   
-    
+         //  função java script que adiciona a classe responsiva para expandir e esconder o menu
+        const menuResponsivo = () => {
+            var x = document.getElementById("menu-superior");
+            if (x.className === "menu") {
+            x.className += " responsive";
+            } else {
+            x.className = "menu";
+            }
+            }
+    </script>                
+      
+
 </body>
 </html>
