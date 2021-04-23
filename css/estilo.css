@@ -19,10 +19,12 @@ ul{
     background-color:tan;
     overflow: hidden;  
     position: fixed;
-    width: 100%;        
+    width: 100%;    
+        
 }
 li{
     float: left;
+    font-size: 15px;
 }
 
 .menu a{
@@ -79,7 +81,8 @@ li a:hover{
     height: auto;
     float: left;
     padding: 15px;
-    /* background-color: red; */    
+    /* background-color: red; */  
+    
 }
 #cidade>h2{
 text-align: center;
@@ -375,7 +378,7 @@ footer{
         -moz-background-size: cover;
         -o-background-size: cover;
          background-size: cover;
-
+         
     }
     /* Menu responsivo */
     /* esconde os itens do menu mobile menos o primeiro */
@@ -402,6 +405,7 @@ footer{
         float: none;
         width: 100%;
         display: inline-block;
+        font-size: 17px;        
     }
 
 
