@@ -371,6 +371,9 @@ footer{
     #whatsapp{
         bottom: 10px;
         right: 10px;
+        margin-bottom: 25px;
+       
+       
     }
     #banner{
         background: url(../img/galeria/centro.jpg) no-repeat center center fixed;
