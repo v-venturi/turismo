@@ -14,10 +14,9 @@
 <body>
     <div id="container">
         <header>
-            <nav class="menu" id="menu-superior">
-                 
+            <nav class="menu" id="menu-superior">                 
                 <ul>
-                    <li><a id= "home" href="#container"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a class="menuAtivo" href="#banner"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#cidade"><i class="fas fa-city"></i> A Cidade</a></li>
                     <li><a href="#pontos-turisticos"><i class="fas fa-umbrella-beach"></i> Pontos Turísticos</a></li>
                     <li><a href="#galeria"><i class="fas fa-camera-retro"></i> Galeria</a></li>
@@ -277,21 +276,54 @@
             }
             }
     </script>  
-    <script>
-        $('li').on('click', function(){
-        $(this).addClass('menu-ativo');
-        $(this).siblings().removeClass('menu-ativo');
-        $('#home').addClass('homeInativo')
+         <!-- deixar menu ativo conforme link e rolagem -->
+    <script script type="text/javascript">
+         $(document).ready(function () {
+         $(window).scroll(function(){
+                 var window_top = $(window).scrollTop() + 4; 
+                // the "12" should equal the margin-top value for nav.stickydiv
+                 var div_top = $("nav>ul>li>a").offset().top;
+                 if (window_top >= div_top) {
+                         $('nav').addClass('menuInativo');
+                     } else {
+                         $('nav').removeClass('menuInativo');
+                     }
+             });          
+         $(document).on("scroll", onScroll);         
+         $('a[href^="#"]').on('click', function (e) {
+               e.preventDefault();
+                 $(document).off("scroll");
+                  $('a').each(function () {
+                     $(this).removeClass('menuAtivo');
+                 })
+                 $(this).addClass('menuAtivo');
+                  var target = this.hash,
+                  menu = target;
+                  $target = $(target);
+                $('html, body').stop().animate({
+                     'scrollTop': $target.offset().top+0
+                 }, 300, 'swing', function () {
+                     window.location.hash = target;
+                     $(document).on("scroll", onScroll);
+                 });
+             });
+         });         
+         function onScroll(event){
+             var scrollPos = $(document).scrollTop();
+             $('ul li a').each(function () {
+                 var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                 if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                     $('ul li a').removeClass("menuAtivo");
+                     currLink.addClass("menuAtivo");
+                 }
+                 else{
+                     currLink.removeClass("menuAtivo");
+                 }
+             });
+         }
+         </script>
 
-    });
-    </script>
-    <script>
-    $(document).ready( function () {
-    $("#home").addClass("menu-ativo");
-       
-    });
-    </script>
-                
       
 
 </body>

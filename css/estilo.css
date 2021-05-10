@@ -48,14 +48,22 @@ li a:hover{
     font-size: 102%;
         
 }
-.menu-ativo{
+.menuAtivo{
     background-color: orange;
     color: snow;
 }
-.homeInativo{
+.menuInativo{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     background-color:tan;
-
+    overflow: hidden;  
+    position: fixed;
+    width: 100%;    
+        
 }
+
+
 #banner{
     width: 100%;
     height: 600px;
