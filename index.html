@@ -17,7 +17,7 @@
             <nav class="menu" id="menu-superior">
                  
                 <ul>
-                    <li><a href="#container"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a id= "home" href="#container"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#cidade"><i class="fas fa-city"></i> A Cidade</a></li>
                     <li><a href="#pontos-turisticos"><i class="fas fa-umbrella-beach"></i> Pontos Turísticos</a></li>
                     <li><a href="#galeria"><i class="fas fa-camera-retro"></i> Galeria</a></li>
@@ -254,8 +254,7 @@
 
         </footer>        
     </div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src = "js/jquery-3.6.0.js"></script>  
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
    
     <!-- script que faz a rolagem do menu "Somoth scroll" e ajustar o menu -->
@@ -282,9 +281,17 @@
         $('li').on('click', function(){
         $(this).addClass('menu-ativo');
         $(this).siblings().removeClass('menu-ativo');
+        $('#home').addClass('homeInativo')
+
     });
     </script>
-    <script src = "js/jquery-3.6.0.js"></script>              
+    <script>
+    $(document).ready( function () {
+    $("#home").addClass("menu-ativo");
+       
+    });
+    </script>
+                
       
 
 </body>
