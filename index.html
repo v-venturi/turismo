@@ -17,7 +17,7 @@
             <nav class="menu" id="menu-superior">
                  
                 <ul>
-                    <li><a class="menu-ativo" href="#container"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#container"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#cidade"><i class="fas fa-city"></i> A Cidade</a></li>
                     <li><a href="#pontos-turisticos"><i class="fas fa-umbrella-beach"></i> Pontos Turísticos</a></li>
                     <li><a href="#galeria"><i class="fas fa-camera-retro"></i> Galeria</a></li>
@@ -242,7 +242,7 @@
                 <p>&copy; 2021 -<span id="destaque">Ubatuba Hoje</span> - Todos os direitos reservados</p>
             </div>
             <div id="whatsapp">
-                <a href="https://wa.me/5511994181118?text=Olá Gostaria de uma informação" target="_blank">
+                <a href="https://wa.me/5511994181118?text=Olá! Gostaria de uma informação" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                     </a>
                 
@@ -277,7 +277,14 @@
             x.className = "menu";
             }
             }
-    </script>                
+    </script>  
+    <script>
+        $('li').on('click', function(){
+        $(this).addClass('menu-ativo');
+        $(this).siblings().removeClass('menu-ativo');
+    });
+    </script>
+    <script src = "js/jquery-3.6.0.js"></script>              
       
 
 </body>
